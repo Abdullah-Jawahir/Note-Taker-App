@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker App</title>
+
+    <!-- <link rel="stylesheet" href="../BOOTSTRAP DIST/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./BootstrapDist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="d-flex justify-content-center align-items-center container-fluid" id="full-screen">
+        <div class="text-justify w-50 border border-secondary bg-light p-3" id="notepad">
+            <p class="text-dark">
+
+            </p>
+        </div>
+
+        <span id="close-icon">X</span>
+    </div>
+
+    <div class="container">
+
+        <h1 class="col-head text-center text-secondary">Notes Taker App</h1>
+
+        <form class="mb-5 mx-auto" id="input-form">
+            <div class="form-group">
+                <label for="user-notes" class="font-weight-bold font-size">
+                    Type your Notes
+                </label>
+                <textarea class="form-control" name="paragraph" id="user-notes" ></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="add-btn">
+                    Add
+                </button>
+            </div>
+        </form>
+
+
+        <div id="output-div">
+            <h2 class="text-secondary">Your Notes</h2>
+
+            <div id="output">
+
+                <div class="d-flex flex-column justify-content-around border border-secondary p-2">
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ratione aut aliquid velit suscipit dignissimos dolores, similique adipisci soluta modi.</p>
+        
+                    <button class="btn btn-primary">
+                        Show more
+                    </button>
+
+                </div> 
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="./BOOTSTRAP DIST/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+

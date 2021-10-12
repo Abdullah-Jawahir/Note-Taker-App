@@ -1,0 +1,75 @@
+body {
+
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+
+    display: none;
+}
+
+#input-form {
+
+    max-width: 70vw;
+}
+
+#input-form  #add-btn {
+
+    width: 100%;
+}
+
+#output {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    height: 50vh;
+    overflow-y: auto;
+    padding: 10px;
+    
+}
+
+
+#output div {
+
+    max-height: 7.5em;
+    min-height: 7em;
+}
+
+#output div p{
+
+    overflow: hidden;
+    height: 1.3em;
+    text-align: justify;
+}
+
+#output div button {
+    
+    width: fit-content;
+}
+
+#full-screen {
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: collapse;
+}
+
+#full-screen #notepad {
+
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+#full-screen #close-icon {
+
+    font-size: 2rem;
+    color: rgb(235, 95, 95);
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
